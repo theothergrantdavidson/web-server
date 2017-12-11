@@ -1,0 +1,28 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "Node based web server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./",
+    "devstart": "nodemon ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theothergrantdavidson/web-server.git"
+  },
+  "author": "Grant Davidson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theothergrantdavidson/web-server/issues"
+  },
+  "homepage": "https://github.com/theothergrantdavidson/web-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.5"
+  }
+}
