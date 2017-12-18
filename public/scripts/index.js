@@ -1,4 +1,4 @@
-//this
+
 var register = document.getElementById("register-user");
 
 function login() {
@@ -9,9 +9,8 @@ function login() {
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            console.log("login success");
-            console.log(`${user}`);
-            window.location.replace(xhttp.getResponseHeader('Location'));
+            window.sessionStorage.accessToken = xhttp.getResponseHeader('access_token');
+            window.location.assign(xhttp.getResponseHeader('Location'));
         } else if (this.readyState == 4 && this.status == 401) {
             alert("Unauthorized user");
             window.location.reload();
